@@ -1,5 +1,6 @@
 import {Sequelize} from 'sequelize-typescript';
 
+require('dotenv').config();
 const {DB_HOST, DB_DATABASE, DB_USERNAME, DB_PASSWORD} = process.env;
 
 export const dbInstanse = new Sequelize({
